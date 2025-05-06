@@ -62,22 +62,14 @@ while (true)
             System.Console.WriteLine("Hire Date: ");
             DateTime hireDate = DateTime.Parse(Console.ReadLine());
 
-            // Employee employee = new Employee();
-            // employee.Id = id;
-            // employee.DepartmentId = departmentId;
-            // employee.FirstName = firstName;
-            // employee.LastName = lastName;
-            // employee.Email = email;
-            // employee.HireDate = hireDate;
-            // int result = employeeService.CreateEmployee(employee);
-            // if (result > 0)
-            // {
-            //     System.Console.WriteLine("Employee added successefully");
-            // }
-            // else
-            // {
-            //     System.Console.WriteLine("Error, employee is not added");
-            // }
+            Employee employee = new Employee();
+            employee.Id = id;
+            employee.DepartmentId = departmentId;
+            employee.FirstName = firstName;
+            employee.LastName = lastName;
+            employee.Email = email;
+            employee.HireDate = hireDate;
+            employeeService.CreateEmployee();
         }
         if (choice == 2)
         {
@@ -399,24 +391,6 @@ while (true)
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// while (true)
 // {
 //     try
 //     {
